@@ -22,6 +22,9 @@ class CreateDatabaseCommand extends ContainerAwareCommand
             ->setDescription('Creates the application database, if not created.');
     }
 
+    /**
+     * @inheritDoc
+     */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         /** @var \Doctrine\DBAL\Connection $connection */

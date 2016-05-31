@@ -1,4 +1,6 @@
+/.bundle
 /.idea
+/.vagrant
 /app/config/parameters.yml
 /build/
 /phpunit.xml

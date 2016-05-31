@@ -10,6 +10,23 @@ Install this project through composer:
     
 Then, configure your virtual host to point to the `web` directory. You can find
 examples [here](http://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html).
+
+## Requisites
+
+To run this project in `dev` mode, you'll need [Vagrant](https://www.vagrantup.com), with the `hostmanager` plugin:
+
+    $ vagrant plugin install vagrant-hostmanager
+    
+To run it in `production` mode, check out [Symfony's requirements](http://symfony.com/doc/current/reference/requirements.html) and how to
+[create a virtualhost for a Symfony project](http://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html).
+    
+## Running the project with Vagrant
+
+To run the project, start vagrant:
+
+    $ vagrant up
+    
+Now, just open `http://multiblog.local/app_dev.php`.
  
 ## License
 

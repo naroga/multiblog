@@ -20,3 +20,7 @@ sudo service nginx restart
 sudo rm /etc/php/7.0/fpm/pool.d/www.conf
 sudo cp /var/www/multiblog/vagrant/php/7.0/fpm/pool.d/www.conf /etc/php/7.0/fpm/pool.d/www.conf
 sudo service php7.0-fpm restart
+mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root';"
+sudo rm -rf /etc/mysql/my.cnf
+sudo cp /var/www/multiblog/vagrant/mysql/my.cnf /etc/mysql/my.cnf
+sudo service mysql restart
